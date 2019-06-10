@@ -1,22 +1,7 @@
-<head>
-    <title>Sammy Mwamburi</title>
-<nav>
-    <a href = "/work">Work</a>
-    <a href = "/blog">Blog</a>
-    <a href = "/resume">Resume</a>
-</nav>
-</head>
-<body>
-<div class='conatiner'>
-    <div class='row'>
-        <div class='col-6 mx-auto'>
-            <h3>Hi, I'm Sammy.</h3>
-                <p>
-                This is a link to my work as well as tips, tricks, tutorials and everything else I’ve learnt (and am learning) along the way. Enjoy.
-                </p>
-        </div>
-    </div>
-</div>
-</body>
-<footer>
-</footer>
+{% extends "base.html" %}
+
+{% block title %}Sammy Mwamburi{% endblock %}
+
+{% block content %}
+This is a link to my work as well as tips, tricks, tutorials and everything else I’ve learnt (and am learning) along the way. Enjoy.
+{% endblock %}
