@@ -21,7 +21,8 @@ from .views import (home_page, work, blog, resume)
 urlpatterns = [
     path('', home_page),
     path('work/', work),
-    path('blog/', blog_post_detail_page),
+    # path('blog/', blog_post_detail_page),
+    path('blog/<int:post_id>/', blog_post_detail_page),
     path('resume/', resume),
     path('admin/', admin.site.urls),
 ]
